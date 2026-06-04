@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MariaDBDatabaseInteractor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MariaDBDatabaseInteractor ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor">
+
+
+
+  <h1 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor" class="text-break">Class MariaDBDatabaseInteractor</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html">GenericDatabaseInteractor</a></div>
+    <div class="level2"><span class="xref">MariaDBDatabaseInteractor</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.html">IGenericDatabaseInteractor</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Id">GenericDatabaseInteractor.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Lock">GenericDatabaseInteractor.Lock</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Log">GenericDatabaseInteractor.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetParameter_System_String_System_Object_">GenericDatabaseInteractor.GetParameter(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetConnection">GenericDatabaseInteractor.GetConnection()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_TryGetConnection_System_Data_Common_DbConnection__System_Exception__">GenericDatabaseInteractor.TryGetConnection(out DbConnection, out Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_IsConnected_System_Exception__">GenericDatabaseInteractor.IsConnected(out Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_IsAvailable">GenericDatabaseInteractor.IsAvailable()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetAllTableNames">GenericDatabaseInteractor.GetAllTableNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Dispose">GenericDatabaseInteractor.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_SetLogConnectionAttemptErrors_System_Boolean_">GenericDatabaseInteractor.SetLogConnectionAttemptErrors(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_DoAllMigrations_System_Collections_Generic_IList_GRYLibrary_Core_Misc_Migration_MigrationInstance__GRYLibrary_Core_APIServer_Services_Interfaces_ITimeService_">GenericDatabaseInteractor.DoAllMigrations(IList&lt;MigrationInstance&gt;, ITimeService)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_WaitUntilAvailable_System_TimeSpan_">GenericDatabaseInteractor.WaitUntilAvailable(TimeSpan)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.APIServer.html">APIServer</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.html">Services</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.html">Database</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MariaDBDatabaseInteractor : GenericDatabaseInteractor, IGenericDatabaseInteractor, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor__ctor_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor__ctor_GRYLibrary_Core_APIServer_Services_Database_IDatabasePersistenceConfiguration_GRYLibrary_Core_APIServer_Services_Logger_IServerLog_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.#ctor(GRYLibrary.Core.APIServer.Services.Database.IDatabasePersistenceConfiguration,GRYLibrary.Core.APIServer.Services.Logger.IServerLog)">MariaDBDatabaseInteractor(IDatabasePersistenceConfiguration, IServerLog)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MariaDBDatabaseInteractor(IDatabasePersistenceConfiguration configuration, IServerLog log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IDatabasePersistenceConfiguration.html">IDatabasePersistenceConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Logger.IServerLog.html">IServerLog</a></td>
+        <td><span class="parametername">log</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor__ctor_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor__ctor_GRYLibrary_Core_APIServer_Services_Database_IDatabasePersistenceConfiguration_GRYLibrary_Core_Logging_GRYLogger_IGRYLog_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.#ctor(GRYLibrary.Core.APIServer.Services.Database.IDatabasePersistenceConfiguration,GRYLibrary.Core.Logging.GRYLogger.IGRYLog)">MariaDBDatabaseInteractor(IDatabasePersistenceConfiguration, IGRYLog)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MariaDBDatabaseInteractor(IDatabasePersistenceConfiguration configuration, IGRYLog log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IDatabasePersistenceConfiguration.html">IDatabasePersistenceConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Logging.GRYLogger.IGRYLog.html">IGRYLog</a></td>
+        <td><span class="parametername">log</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_Accept_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.Accept*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_Accept_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.Accept(GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor)">Accept(IGenericDatabaseInteractorVisitor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Accept(IGenericDatabaseInteractorVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor.html">IGenericDatabaseInteractorVisitor</a></td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Accept_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor_">GenericDatabaseInteractor.Accept(IGenericDatabaseInteractorVisitor)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_Accept_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.Accept*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_Accept__1_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor___0__" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.Accept``1(GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor{``0})">Accept&lt;T&gt;(IGenericDatabaseInteractorVisitor&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Accept&lt;T&gt;(IGenericDatabaseInteractorVisitor&lt;T&gt; visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor-1.html">IGenericDatabaseInteractorVisitor</a>&lt;T&gt;</td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_Accept__1_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor___0__">GenericDatabaseInteractor.Accept&lt;T&gt;(IGenericDatabaseInteractorVisitor&lt;T&gt;)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateCommand_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateCommand*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateCommand_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateCommand(System.String)">CreateCommand(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DbCommand CreateCommand(string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbcommand">DbCommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_CreateCommand_System_String_">GenericDatabaseInteractor.CreateCommand(string)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateNewConnectionObject_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateNewConnectionObject*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateNewConnectionObject_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateNewConnectionObject(System.String)">CreateNewConnectionObject(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override DbConnection CreateNewConnectionObject(string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection">DbConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_CreateNewConnectionObject_System_String_">GenericDatabaseInteractor.CreateNewConnectionObject(string)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(System.String)">CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(string migrationTableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationTableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist_System_String_">GenericDatabaseInteractor.CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(string)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateSQLStatementForGetAllTableNames_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateSQLStatementForGetAllTableNames*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_CreateSQLStatementForGetAllTableNames" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.CreateSQLStatementForGetAllTableNames">CreateSQLStatementForGetAllTableNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreateSQLStatementForGetAllTableNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_CreateSQLStatementForGetAllTableNames">GenericDatabaseInteractor.CreateSQLStatementForGetAllTableNames()</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_EscapePasswordInConnectionString_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.EscapePasswordInConnectionString*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_EscapePasswordInConnectionString_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.EscapePasswordInConnectionString(System.String)">EscapePasswordInConnectionString(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string EscapePasswordInConnectionString(string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_EscapePasswordInConnectionString_System_String_">GenericDatabaseInteractor.EscapePasswordInConnectionString(string)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetParameter_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetParameter*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetParameter_System_String_System_Object_System_Type_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetParameter(System.String,System.Object,System.Type)">GetParameter(string, object?, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DbParameter GetParameter(string parameterName, object? value, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbparameter">DbParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetParameter_System_String_System_Object_System_Type_">GenericDatabaseInteractor.GetParameter(string, object?, Type)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetSQLStatementForRunningMigration_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetSQLStatementForRunningMigration*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetSQLStatementForRunningMigration_System_String_System_String_System_String_System_DateTimeOffset_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetSQLStatementForRunningMigration(System.String,System.String,System.String,System.DateTimeOffset)">GetSQLStatementForRunningMigration(string, string, string, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetSQLStatementForRunningMigration(string migrationContent, string migrationTableName, string migrationName, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationContent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationTableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetSQLStatementForRunningMigration_System_String_System_String_System_String_System_DateTimeOffset_">GenericDatabaseInteractor.GetSQLStatementForRunningMigration(string, string, string, DateTimeOffset)</a></div>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetSQLStatementForSelectMigrationMaintenanceTableContent_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetSQLStatementForSelectMigrationMaintenanceTableContent*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_MariaDBDatabaseInteractor_GetSQLStatementForSelectMigrationMaintenanceTableContent_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.MariaDBDatabaseInteractor.GetSQLStatementForSelectMigrationMaintenanceTableContent(System.String)">GetSQLStatementForSelectMigrationMaintenanceTableContent(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetSQLStatementForSelectMigrationMaintenanceTableContent(string migrationTableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationTableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.GenericDatabaseInteractor.html#GRYLibrary_Core_APIServer_Services_Database_GenericDatabaseInteractor_GetSQLStatementForSelectMigrationMaintenanceTableContent_System_String_">GenericDatabaseInteractor.GetSQLStatementForSelectMigrationMaintenanceTableContent(string)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.html">IGenericDatabaseInteractor</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

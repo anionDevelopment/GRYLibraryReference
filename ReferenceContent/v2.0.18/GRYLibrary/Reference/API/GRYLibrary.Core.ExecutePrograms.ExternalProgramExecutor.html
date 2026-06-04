@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ExternalProgramExecutor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ExternalProgramExecutor ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor">
+
+
+
+  <h1 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor" class="text-break">Class ExternalProgramExecutor</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ExternalProgramExecutor</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.ExecutePrograms.html">ExecutePrograms</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ExternalProgramExecutor : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutorConfiguration_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor(GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutorConfiguration)">ExternalProgramExecutor(ExternalProgramExecutorConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalProgramExecutor(ExternalProgramExecutorConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutorConfiguration.html">ExternalProgramExecutorConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_System_String_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor(System.String)">ExternalProgramExecutor(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalProgramExecutor(string programPathAndFile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">programPathAndFile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_System_String_System_String_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor(System.String,System.String)">ExternalProgramExecutor(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalProgramExecutor(string programPathAndFile, string arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">programPathAndFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__ctor_System_String_System_String_System_String_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.#ctor(System.String,System.String,System.String)">ExternalProgramExecutor(string, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalProgramExecutor(string program, string argument, string workingDirectory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">program</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">argument</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">workingDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor__Process" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor._Process">_Process</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Process _Process</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.process">Process</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdErrLines_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdErrLines*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdErrLines" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdErrLines">AllStdErrLines</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] AllStdErrLines { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If the process is not terminated yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdErrLinesPartially_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdErrLinesPartially*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdErrLinesPartially" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdErrLinesPartially">AllStdErrLinesPartially</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] AllStdErrLinesPartially { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdOutLines_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdOutLines*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdOutLines" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdOutLines">AllStdOutLines</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] AllStdOutLines { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If the process is not terminated yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdOutLinesPartially_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdOutLinesPartially*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_AllStdOutLinesPartially" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.AllStdOutLinesPartially">AllStdOutLinesPartially</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] AllStdOutLinesPartially { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Configuration_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Configuration*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Configuration" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalProgramExecutorConfiguration Configuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutorConfiguration.html">ExternalProgramExecutorConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_CurrentExecutionState_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.CurrentExecutionState*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_CurrentExecutionState" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.CurrentExecutionState">CurrentExecutionState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExecutionState CurrentExecutionState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.ExecutionState.html">ExecutionState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ExecutionDuration_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExecutionDuration*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ExecutionDuration" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExecutionDuration">ExecutionDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ExecutionDuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ExitCode_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExitCode*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ExitCode" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExitCode">ExitCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExitCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If the process is not terminated yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_IsRunning_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.IsRunning*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_IsRunning" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.IsRunning">IsRunning</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRunning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_LogObject_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.LogObject*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_LogObject" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.LogObject">LogObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGRYLog LogObject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Logging.GRYLogger.IGRYLog.html">IGRYLog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ProcessId_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ProcessId*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ProcessId" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ProcessId">ProcessId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ProcessId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ProcessWasAbortedDueToTimeout_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ProcessWasAbortedDueToTimeout*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ProcessWasAbortedDueToTimeout" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ProcessWasAbortedDueToTimeout">ProcessWasAbortedDueToTimeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ProcessWasAbortedDueToTimeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If the process is not terminated yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_CreateEpewArgumentString_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.CreateEpewArgumentString*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_CreateEpewArgumentString_System_String_System_String_System_String_System_Boolean_System_Nullable_System_Int32__GRYLibrary_Core_ExecutePrograms_Verbosity_System_Boolean_System_String_System_String_GRYLibrary_Core_ExecutePrograms_WaitingState_System_String_System_String_System_String_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.CreateEpewArgumentString(System.String,System.String,System.String,System.Boolean,System.Nullable{System.Int32},GRYLibrary.Core.ExecutePrograms.Verbosity,System.Boolean,System.String,System.String,GRYLibrary.Core.ExecutePrograms.WaitingState,System.String,System.String,System.String)">CreateEpewArgumentString(string, string, string, bool, int?, Verbosity, bool, string, string, WaitingState, string, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CreateEpewArgumentString(string programPathAndFile, string arguments, string workingDirectory, bool printErrorsAsInformation, int? timeoutInMilliseconds, Verbosity verbosity, bool addLogOverhead, string logFile, string title, WaitingState waitingState, string logNamespace, string user, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">programPathAndFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">workingDirectory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">printErrorsAsInformation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeoutInMilliseconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.Verbosity.html">Verbosity</a></td>
+        <td><span class="parametername">verbosity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addLogOverhead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">logFile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.WaitingState.html">WaitingState</a></td>
+        <td><span class="parametername">waitingState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">logNamespace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Dispose_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Dispose*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Dispose" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_DisposeProcess_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.DisposeProcess*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_DisposeProcess" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.DisposeProcess">DisposeProcess()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisposeProcess()</code></pre>
+  </div>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_GetSummaryOfExecutedProgram_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.GetSummaryOfExecutedProgram*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_GetSummaryOfExecutedProgram_System_Boolean_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.GetSummaryOfExecutedProgram(System.Boolean)">GetSummaryOfExecutedProgram(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSummaryOfExecutedProgram(bool includeStdOutAndStdErr = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">includeStdOutAndStdErr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>Returns a summary of the executed program with its error-code, console-outputs, etc.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_GetSummaryOfExecutedProgram_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This summary is designed for readability and not for a further program-controlled processing of the data. For that purpose please read out the properties of this object.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If the process is not terminated yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Run_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Run*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Run" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Run">Run()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Terminate_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Terminate*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_Terminate" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.Terminate">Terminate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Terminate()</code></pre>
+  </div>
+
+
+  <a id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_WaitUntilTerminated_" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.WaitUntilTerminated*"></a>
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_WaitUntilTerminated" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.WaitUntilTerminated">WaitUntilTerminated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitUntilTerminated()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="GRYLibrary_Core_ExecutePrograms_ExternalProgramExecutor_ExecutionFinishedEvent" data-uid="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExecutionFinishedEvent">ExecutionFinishedEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ExternalProgramExecutor.ExecutionFinishedHandler ExecutionFinishedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.html">ExternalProgramExecutor</a>.<a class="xref" href="GRYLibrary.Core.ExecutePrograms.ExternalProgramExecutor.ExecutionFinishedHandler.html">ExecutionFinishedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
