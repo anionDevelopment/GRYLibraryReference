@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class APIServer&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class APIServer&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt; ">
+    
+    <meta name="description" content="Represents a webserver for a cloud-native HTTP-API-server">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.APIServer.APIServer`3">
+
+
+
+  <h1 id="GRYLibrary_Core_APIServer_APIServer_3" data-uid="GRYLibrary.Core.APIServer.APIServer`3" class="text-break">Class APIServer&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;</h1>
+  <div class="markdown level0 summary"><p>Represents a webserver for a cloud-native HTTP-API-server</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">APIServer&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.APIServer.html">APIServer</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_APIServer_APIServer_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class APIServer&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt; where ApplicationSpecificConstants : new() where PersistedApplicationSpecificConfiguration : new() where CommandlineParameterType : class, IAPIServerCommandlineParameter</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ApplicationSpecificConstants</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">PersistedApplicationSpecificConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">CommandlineParameterType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3__ctor_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3__ctor" data-uid="GRYLibrary.Core.APIServer.APIServer`3.#ctor">APIServer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public APIServer()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3_APIMain_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.APIMain*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3_APIMain__2_GRYLibrary_Core_Misc_ConsoleApplication_GRYConsoleApplicationInitialInformation_GRYLibrary_Core_APIServer_Settings_APIServerConfiguration__0__1__2__GRYLibrary_Core_Logging_GRYLogger_IGRYLog_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.APIMain(`2,GRYLibrary.Core.Misc.ConsoleApplication.GRYConsoleApplicationInitialInformation,GRYLibrary.Core.APIServer.Settings.APIServerConfiguration{`0,`1,`2},GRYLibrary.Core.Logging.GRYLogger.IGRYLog)">APIMain(CommandlineParameterType, GRYConsoleApplicationInitialInformation, APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;, IGRYLog)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int APIMain(CommandlineParameterType commandlineParameter, GRYConsoleApplicationInitialInformation gryConsoleApplicationInitialInformation, APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt; apiServerConfiguration, IGRYLog initialLogger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CommandlineParameterType</span></td>
+        <td><span class="parametername">commandlineParameter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Misc.ConsoleApplication.GRYConsoleApplicationInitialInformation.html">GRYConsoleApplicationInitialInformation</a></td>
+        <td><span class="parametername">gryConsoleApplicationInitialInformation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Settings.APIServerConfiguration-3.html">APIServerConfiguration</a>&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;</td>
+        <td><span class="parametername">apiServerConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Logging.GRYLogger.IGRYLog.html">IGRYLog</a></td>
+        <td><span class="parametername">initialLogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3_CreateMain_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.CreateMain*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3_CreateMain_System_Action_GRYLibrary_Core_APIServer_Settings_APIServerConfiguration__0__1__2___GRYLibrary_Core_Logging_GRYLogger_IGRYLog_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.CreateMain(System.Action{GRYLibrary.Core.APIServer.Settings.APIServerConfiguration{`0,`1,`2}},GRYLibrary.Core.Logging.GRYLogger.IGRYLog)">CreateMain(Action&lt;APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;&gt;, IGRYLog)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;CommandlineParameterType, GRYConsoleApplicationInitialInformation, int&gt; CreateMain(Action&lt;APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;&gt; init, IGRYLog initialLog)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="GRYLibrary.Core.APIServer.Settings.APIServerConfiguration-3.html">APIServerConfiguration</a>&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;&gt;</td>
+        <td><span class="parametername">init</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Logging.GRYLogger.IGRYLog.html">IGRYLog</a></td>
+        <td><span class="parametername">initialLog</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;CommandlineParameterType, <a class="xref" href="GRYLibrary.Core.Misc.ConsoleApplication.GRYConsoleApplicationInitialInformation.html">GRYConsoleApplicationInitialInformation</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3_GetDefaultBaseFolder_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.GetDefaultBaseFolder*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3_GetDefaultBaseFolder_System_Reflection_Assembly_GRYLibrary_Core_APIServer_ExecutionModes_ExecutionMode_GRYLibrary_Core_APIServer_ConcreteEnvironments_GRYEnvironment_System_Boolean_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.GetDefaultBaseFolder(System.Reflection.Assembly,GRYLibrary.Core.APIServer.ExecutionModes.ExecutionMode,GRYLibrary.Core.APIServer.ConcreteEnvironments.GRYEnvironment,System.Boolean)">GetDefaultBaseFolder(Assembly, ExecutionMode, GRYEnvironment, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDefaultBaseFolder(Assembly executingAssembly, ExecutionMode executionMode, GRYEnvironment environment, bool isTestRun)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
+        <td><span class="parametername">executingAssembly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.ExecutionModes.ExecutionMode.html">ExecutionMode</a></td>
+        <td><span class="parametername">executionMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.ConcreteEnvironments.GRYEnvironment.html">GRYEnvironment</a></td>
+        <td><span class="parametername">environment</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isTestRun</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3_GetDefaultBaseFolder_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.GetDefaultBaseFolder*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3_GetDefaultBaseFolder__1_GRYLibrary_Core_APIServer_Settings_IApplicationConstants___0__System_Boolean_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.GetDefaultBaseFolder``1(GRYLibrary.Core.APIServer.Settings.IApplicationConstants{``0},System.Boolean)">GetDefaultBaseFolder&lt;AppConstantsType&gt;(IApplicationConstants&lt;AppConstantsType&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDefaultBaseFolder&lt;AppConstantsType&gt;(IApplicationConstants&lt;AppConstantsType&gt; applicationConstants, bool isTestRun)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Settings.IApplicationConstants-1.html">IApplicationConstants</a>&lt;AppConstantsType&gt;</td>
+        <td><span class="parametername">applicationConstants</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isTestRun</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">AppConstantsType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_APIServer_3_Run_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.Run*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_APIServer_3_Run_GRYLibrary_Core_APIServer_Settings_APIServerConfiguration__0__1__2__GRYLibrary_Core_APIServer_Settings_Configuration_IPersistedAPIServerConfiguration__1__System_Boolean_" data-uid="GRYLibrary.Core.APIServer.APIServer`3.Run(GRYLibrary.Core.APIServer.Settings.APIServerConfiguration{`0,`1,`2},GRYLibrary.Core.APIServer.Settings.Configuration.IPersistedAPIServerConfiguration{`1},System.Boolean)">Run(APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;, IPersistedAPIServerConfiguration&lt;PersistedApplicationSpecificConfiguration&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Run(APIServerConfiguration&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt; config, IPersistedAPIServerConfiguration&lt;PersistedApplicationSpecificConfiguration&gt; persistedAPIServerConfiguration, bool initializeLogAsVerbose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Settings.APIServerConfiguration-3.html">APIServerConfiguration</a>&lt;ApplicationSpecificConstants, PersistedApplicationSpecificConfiguration, CommandlineParameterType&gt;</td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Settings.Configuration.IPersistedAPIServerConfiguration-1.html">IPersistedAPIServerConfiguration</a>&lt;PersistedApplicationSpecificConfiguration&gt;</td>
+        <td><span class="parametername">persistedAPIServerConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">initializeLogAsVerbose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_PersistToDisk__1___0_System_String_">Utilities.PersistToDisk&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

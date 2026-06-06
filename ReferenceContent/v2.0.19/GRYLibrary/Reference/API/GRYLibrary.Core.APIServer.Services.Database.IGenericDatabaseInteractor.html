@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IGenericDatabaseInteractor </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IGenericDatabaseInteractor ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor">
+
+
+
+  <h1 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor" class="text-break">Interface IGenericDatabaseInteractor</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.APIServer.html">APIServer</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.html">Services</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.html">Database</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGenericDatabaseInteractor : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Log_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Log*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Log" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Log">Log</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGRYLog Log { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Logging.GRYLogger.IGRYLog.html">IGRYLog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Accept_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Accept*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Accept_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Accept(GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor)">Accept(IGenericDatabaseInteractorVisitor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Accept(IGenericDatabaseInteractorVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor.html">IGenericDatabaseInteractorVisitor</a></td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Accept_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Accept*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_Accept__1_GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractorVisitor___0__" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.Accept``1(GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor{``0})">Accept&lt;T&gt;(IGenericDatabaseInteractorVisitor&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Accept&lt;T&gt;(IGenericDatabaseInteractorVisitor&lt;T&gt; visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractorVisitor-1.html">IGenericDatabaseInteractorVisitor</a>&lt;T&gt;</td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateCommand_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateCommand*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateCommand_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateCommand(System.String)">CreateCommand(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DbCommand CreateCommand(string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbcommand">DbCommand</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(System.String)">CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CreateSQLStatementForCreatingMigrationMaintenanceTableIfNotExist(string tableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateSQLStatementForGetAllTableNames_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateSQLStatementForGetAllTableNames*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_CreateSQLStatementForGetAllTableNames" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.CreateSQLStatementForGetAllTableNames">CreateSQLStatementForGetAllTableNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CreateSQLStatementForGetAllTableNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_DoAllMigrations_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.DoAllMigrations*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_DoAllMigrations_System_Collections_Generic_IList_GRYLibrary_Core_Misc_Migration_MigrationInstance__GRYLibrary_Core_APIServer_Services_Interfaces_ITimeService_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.DoAllMigrations(System.Collections.Generic.IList{GRYLibrary.Core.Misc.Migration.MigrationInstance},GRYLibrary.Core.APIServer.Services.Interfaces.ITimeService)">DoAllMigrations(IList&lt;MigrationInstance&gt;, ITimeService)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DoAllMigrations(IList&lt;MigrationInstance&gt; migrations, ITimeService timeService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="GRYLibrary.Core.Misc.Migration.MigrationInstance.html">MigrationInstance</a>&gt;</td>
+        <td><span class="parametername">migrations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.Services.Interfaces.ITimeService.html">ITimeService</a></td>
+        <td><span class="parametername">timeService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_EscapePasswordInConnectionString_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.EscapePasswordInConnectionString*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_EscapePasswordInConnectionString_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.EscapePasswordInConnectionString(System.String)">EscapePasswordInConnectionString(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EscapePasswordInConnectionString(string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetAllTableNames_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetAllTableNames*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetAllTableNames" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetAllTableNames">GetAllTableNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetAllTableNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetConnection_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetConnection*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetConnection" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetConnection">GetConnection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DbConnection GetConnection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection">DbConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetParameter_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetParameter*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetParameter_System_String_System_Object_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetParameter(System.String,System.Object)">GetParameter(string, object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DbParameter GetParameter(string parameterName, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbparameter">DbParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetParameter_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetParameter*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetParameter_System_String_System_Object_System_Type_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetParameter(System.String,System.Object,System.Type)">GetParameter(string, object?, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DbParameter GetParameter(string parameterName, object? value, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbparameter">DbParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetSQLStatementForRunningMigration_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetSQLStatementForRunningMigration*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetSQLStatementForRunningMigration_System_String_System_String_System_String_System_DateTimeOffset_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetSQLStatementForRunningMigration(System.String,System.String,System.String,System.DateTimeOffset)">GetSQLStatementForRunningMigration(string, string, string, DateTimeOffset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSQLStatementForRunningMigration(string migrationContent, string migrationTableName, string migrationName, DateTimeOffset now)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationContent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationTableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetSQLStatementForSelectMigrationMaintenanceTableContent_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetSQLStatementForSelectMigrationMaintenanceTableContent*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_GetSQLStatementForSelectMigrationMaintenanceTableContent_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.GetSQLStatementForSelectMigrationMaintenanceTableContent(System.String)">GetSQLStatementForSelectMigrationMaintenanceTableContent(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSQLStatementForSelectMigrationMaintenanceTableContent(string migrationTableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">migrationTableName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_IsAvailable_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.IsAvailable*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_IsAvailable" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.IsAvailable">IsAvailable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(bool, Exception?) IsAvailable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>)</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_SetLogConnectionAttemptErrors_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.SetLogConnectionAttemptErrors*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_SetLogConnectionAttemptErrors_System_Boolean_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.SetLogConnectionAttemptErrors(System.Boolean)">SetLogConnectionAttemptErrors(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetLogConnectionAttemptErrors(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_TryGetConnection_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.TryGetConnection*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_TryGetConnection_System_Data_Common_DbConnection__System_Exception__" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.TryGetConnection(System.Data.Common.DbConnection@,System.Exception@)">TryGetConnection(out DbConnection?, out Exception?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetConnection(out DbConnection? connection, out Exception? error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.common.dbconnection">DbConnection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_WaitUntilAvailable_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.WaitUntilAvailable*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Database_IGenericDatabaseInteractor_WaitUntilAvailable_System_TimeSpan_" data-uid="GRYLibrary.Core.APIServer.Services.Database.IGenericDatabaseInteractor.WaitUntilAvailable(System.TimeSpan)">WaitUntilAvailable(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WaitUntilAvailable(TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

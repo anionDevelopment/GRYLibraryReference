@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DirectedGraph </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DirectedGraph ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.Graph.DirectedGraph">
+
+
+
+  <h1 id="GRYLibrary_Core_Graph_DirectedGraph" data-uid="GRYLibrary.Core.Graph.DirectedGraph" class="text-break">Class DirectedGraph</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="GRYLibrary.Core.Graph.Graph.html">Graph</a></div>
+    <div class="level2"><span class="xref">DirectedGraph</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_Vertices">Graph.Vertices</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_SelfLoopIsAllowed">Graph.SelfLoopIsAllowed</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetVertex_System_String_">Graph.GetVertex(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_AddVertex_GRYLibrary_Core_Graph_Vertex_">Graph.AddVertex(Vertex)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_RemoveAllEdgesWithoutWeight">Graph.RemoveAllEdgesWithoutWeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_RemoveVertex_GRYLibrary_Core_Graph_Vertex_">Graph.RemoveVertex(Vertex)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_ContainsOneOrMoreSelfLoops">Graph.ContainsOneOrMoreSelfLoops()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_ContainsOneOrMoreCycles">Graph.ContainsOneOrMoreCycles()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_IsConnected">Graph.IsConnected()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_ToAdjacencyMatrix">Graph.ToAdjacencyMatrix()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetAllCycles">Graph.GetAllCycles()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetAllCyclesThroughASpecificVertex_GRYLibrary_Core_Graph_Vertex_">Graph.GetAllCyclesThroughASpecificVertex(Vertex)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetShortestPath_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Vertex_">Graph.GetShortestPath(Vertex, Vertex)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_BreadthFirstSearch_System_Func_GRYLibrary_Core_Graph_Vertex_System_Collections_Generic_IList_GRYLibrary_Core_Graph_Edge__System_Boolean__">Graph.BreadthFirstSearch(Func&lt;Vertex, IList&lt;Edge&gt;, bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_BreadthFirstSearch_System_Func_GRYLibrary_Core_Graph_Vertex_System_Collections_Generic_IList_GRYLibrary_Core_Graph_Edge__System_Boolean__GRYLibrary_Core_Graph_Vertex_">Graph.BreadthFirstSearch(Func&lt;Vertex, IList&lt;Edge&gt;, bool&gt;, Vertex)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_DepthFirstSearch_System_Func_GRYLibrary_Core_Graph_Vertex_System_Collections_Generic_IList_GRYLibrary_Core_Graph_Edge__System_Boolean__System_Boolean_">Graph.DepthFirstSearch(Func&lt;Vertex, IList&lt;Edge&gt;, bool&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_DepthFirstSearch_System_Func_GRYLibrary_Core_Graph_Vertex_System_Collections_Generic_IList_GRYLibrary_Core_Graph_Edge__System_Boolean__GRYLibrary_Core_Graph_Vertex_System_Boolean_">Graph.DepthFirstSearch(Func&lt;Vertex, IList&lt;Edge&gt;, bool&gt;, Vertex, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_TryGetEdge_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Edge__">Graph.TryGetEdge(Vertex, Vertex, out Edge)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_Equals_System_Object_">Graph.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetHashCode">Graph.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_IsSubgraph_GRYLibrary_Core_Graph_Graph_System_Collections_Generic_IDictionary_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Vertex___">Graph.IsSubgraph(Graph, out IDictionary&lt;Vertex, Vertex&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_IsSubgraphOf_GRYLibrary_Core_Graph_Graph_System_Collections_Generic_IDictionary_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Vertex___">Graph.IsSubgraphOf(Graph, out IDictionary&lt;Vertex, Vertex&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_IsIsomorphic_GRYLibrary_Core_Graph_Graph_System_Collections_Generic_IDictionary_GRYLibrary_Core_Graph_Vertex_GRYLibrary_Core_Graph_Vertex___">Graph.IsIsomorphic(Graph, out IDictionary&lt;Vertex, Vertex&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_HasHamiltonianCycle_GRYLibrary_Core_Graph_Cycle__">Graph.HasHamiltonianCycle(out Cycle)</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetMinimumDegree">Graph.GetMinimumDegree()</a>
+    </div>
+    <div>
+      <a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetMaximumDegree">Graph.GetMaximumDegree()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.Graph.html">Graph</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_Graph_DirectedGraph_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DirectedGraph : Graph</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph__ctor_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.#ctor*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph__ctor" data-uid="GRYLibrary.Core.Graph.DirectedGraph.#ctor">DirectedGraph()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DirectedGraph()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_DirectedEdges_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.DirectedEdges*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_DirectedEdges" data-uid="GRYLibrary.Core.Graph.DirectedGraph.DirectedEdges">DirectedEdges</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;Edge&gt; DirectedEdges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.Edge.html">Edge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_Edges_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Edges*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_Edges" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Edges">Edges</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ISet&lt;Edge&gt; Edges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.Edge.html">Edge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_Edges">Graph.Edges</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_Accept_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Accept*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_Accept_GRYLibrary_Core_Graph_IGraphVisitor_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Accept(GRYLibrary.Core.Graph.IGraphVisitor)">Accept(IGraphVisitor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Accept(IGraphVisitor visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.IGraphVisitor.html">IGraphVisitor</a></td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_Accept_GRYLibrary_Core_Graph_IGraphVisitor_">Graph.Accept(IGraphVisitor)</a></div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_Accept_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Accept*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_Accept__1_GRYLibrary_Core_Graph_IGraphVisitor___0__" data-uid="GRYLibrary.Core.Graph.DirectedGraph.Accept``1(GRYLibrary.Core.Graph.IGraphVisitor{``0})">Accept&lt;T&gt;(IGraphVisitor&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Accept&lt;T&gt;(IGraphVisitor&lt;T&gt; visitor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.IGraphVisitor-1.html">IGraphVisitor</a>&lt;T&gt;</td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_Accept__1_GRYLibrary_Core_Graph_IGraphVisitor___0__">Graph.Accept&lt;T&gt;(IGraphVisitor&lt;T&gt;)</a></div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_AddEdge_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.AddEdge*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_AddEdge_GRYLibrary_Core_Graph_Edge_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.AddEdge(GRYLibrary.Core.Graph.Edge)">AddEdge(Edge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddEdge(Edge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Edge.html">Edge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_AddEdge_GRYLibrary_Core_Graph_Edge_">Graph.AddEdge(Edge)</a></div>
+  <h5 id="GRYLibrary_Core_Graph_DirectedGraph_AddEdge_GRYLibrary_Core_Graph_Edge__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function will also add the vertices which are connected by <code class="paramref">edge</code> to the list of vertices of this graph.</p>
+</div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_CreateByAdjacencyMatrix_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.CreateByAdjacencyMatrix*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_CreateByAdjacencyMatrix_System_Double_0__0___" data-uid="GRYLibrary.Core.Graph.DirectedGraph.CreateByAdjacencyMatrix(System.Double[0:,0:])">CreateByAdjacencyMatrix(double[,])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DirectedGraph CreateByAdjacencyMatrix(double[,] adjacencyMatrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[,]</td>
+        <td><span class="parametername">adjacencyMatrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.DirectedGraph.html">DirectedGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectPredecessors_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectPredecessors*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectPredecessors_GRYLibrary_Core_Graph_Vertex_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectPredecessors(GRYLibrary.Core.Graph.Vertex)">GetDirectPredecessors(Vertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;Vertex&gt; GetDirectPredecessors(Vertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a>&gt;</td>
+        <td><p>Returns a set of all vertices which are a direct predecessor of this vertex in this graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectPredecessors_GRYLibrary_Core_Graph_Vertex__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this graph contains a selfloop with this vertex then the result-set will also contain this vertex.
+The runtime of this function is &lt;=O(|this.Edges|).</p>
+</div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectSuccessorEdges_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectSuccessorEdges*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectSuccessorEdges_GRYLibrary_Core_Graph_Vertex_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectSuccessorEdges(GRYLibrary.Core.Graph.Vertex)">GetDirectSuccessorEdges(Vertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ISet&lt;Edge&gt; GetDirectSuccessorEdges(Vertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.Edge.html">Edge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetDirectSuccessorEdges_GRYLibrary_Core_Graph_Vertex_">Graph.GetDirectSuccessorEdges(Vertex)</a></div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectSuccessors_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectSuccessors*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectSuccessors_GRYLibrary_Core_Graph_Vertex_System_Boolean_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetDirectSuccessors(GRYLibrary.Core.Graph.Vertex,System.Boolean)">GetDirectSuccessors(Vertex, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ISet&lt;Vertex&gt; GetDirectSuccessors(Vertex vertex, bool doNotWalkAgainstDirectedEdges = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">doNotWalkAgainstDirectedEdges</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a>&gt;</td>
+        <td><p>Returns a set of all vertices which are a direct successor of this vertex in this graph.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_GetDirectSuccessors_GRYLibrary_Core_Graph_Vertex_System_Boolean_">Graph.GetDirectSuccessors(Vertex, bool)</a></div>
+  <h5 id="GRYLibrary_Core_Graph_DirectedGraph_GetDirectSuccessors_GRYLibrary_Core_Graph_Vertex_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this graph contains a selfloop with this vertex then the result-set will also contain this vertex.
+The runtime of this function is &lt;=O(|this.Edges|).</p>
+</div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_GetIncomingEdges_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetIncomingEdges*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_GetIncomingEdges_GRYLibrary_Core_Graph_Vertex_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetIncomingEdges(GRYLibrary.Core.Graph.Vertex)">GetIncomingEdges(Vertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;DirectedEdge&gt; GetIncomingEdges(Vertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.DirectedEdge.html">DirectedEdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_GetOutgoingEdges_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetOutgoingEdges*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_GetOutgoingEdges_GRYLibrary_Core_Graph_Vertex_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.GetOutgoingEdges(GRYLibrary.Core.Graph.Vertex)">GetOutgoingEdges(Vertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;DirectedEdge&gt; GetOutgoingEdges(Vertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.Graph.DirectedEdge.html">DirectedEdge</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_HasIncomingEdge_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.HasIncomingEdge*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_HasIncomingEdge_GRYLibrary_Core_Graph_Vertex_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.HasIncomingEdge(GRYLibrary.Core.Graph.Vertex)">HasIncomingEdge(Vertex)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasIncomingEdge(Vertex vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Vertex.html">Vertex</a></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_RemoveEdge_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.RemoveEdge*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_RemoveEdge_GRYLibrary_Core_Graph_Edge_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.RemoveEdge(GRYLibrary.Core.Graph.Edge)">RemoveEdge(Edge)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveEdge(Edge edge)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.Edge.html">Edge</a></td>
+        <td><span class="parametername">edge</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_RemoveEdge_GRYLibrary_Core_Graph_Edge_">Graph.RemoveEdge(Edge)</a></div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_ToString_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.ToString*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_ToString" data-uid="GRYLibrary.Core.Graph.DirectedGraph.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GRYLibrary.Core.Graph.Graph.html#GRYLibrary_Core_Graph_Graph_ToString">Graph.ToString()</a></div>
+
+
+  <a id="GRYLibrary_Core_Graph_DirectedGraph_ToUndirectedGraph_" data-uid="GRYLibrary.Core.Graph.DirectedGraph.ToUndirectedGraph*"></a>
+  <h4 id="GRYLibrary_Core_Graph_DirectedGraph_ToUndirectedGraph" data-uid="GRYLibrary.Core.Graph.DirectedGraph.ToUndirectedGraph">ToUndirectedGraph()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UndirectedGraph ToUndirectedGraph()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.Graph.UndirectedGraph.html">UndirectedGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_PersistToDisk__1___0_System_String_">Utilities.PersistToDisk&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
