@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IAuthenticationServicePersistence&lt;UserType&gt; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IAuthenticationServicePersistence&lt;UserType&gt; ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1">
+
+
+
+  <h1 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1" class="text-break">Interface IAuthenticationServicePersistence&lt;UserType&gt;</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GRYLibrary.html">GRYLibrary</a>.<a class="xref" href="GRYLibrary.Core.html">Core</a>.<a class="xref" href="GRYLibrary.Core.APIServer.html">APIServer</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.html">Services</a>.<a class="xref" href="GRYLibrary.Core.APIServer.Services.Trans.html">Trans</a></h6>
+  <h6><strong>Assembly</strong>: GRYLibrary.dll</h6>
+  <h5 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAuthenticationServicePersistence&lt;UserType&gt; where UserType : User</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">UserType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AccessTokenExists_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AccessTokenExists*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AccessTokenExists_System_String__0__" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AccessTokenExists(System.String,`0@)">AccessTokenExists(string, out UserType?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AccessTokenExists(string accessToken, out UserType? user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddAccessToken_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddAccessToken*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddAccessToken_GRYLibrary_Core_APIServer_CommonAuthenticationTypes_AccessToken_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddAccessToken(GRYLibrary.Core.APIServer.CommonAuthenticationTypes.AccessToken)">AddAccessToken(AccessToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddAccessToken(AccessToken newAccessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonAuthenticationTypes.AccessToken.html">AccessToken</a></td>
+        <td><span class="parametername">newAccessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddRole_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddRole*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddRole_GRYLibrary_Core_APIServer_CommonDBTypes_Role_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddRole(GRYLibrary.Core.APIServer.CommonDBTypes.Role)">AddRole(Role)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddRole(Role role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonDBTypes.Role.html">Role</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddRoleToUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddRoleToUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddRoleToUser_System_String_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddRoleToUser(System.String,System.String)">AddRoleToUser(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddRoleToUser(string userId, string roleId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_AddUser__0_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.AddUser(`0)">AddUser(UserType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddUser(UserType newUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td><span class="parametername">newUser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_DeleteRoleByName_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.DeleteRoleByName*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_DeleteRoleByName_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.DeleteRoleByName(System.String)">DeleteRoleByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteRoleByName(string roleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAccessToken_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAccessToken*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAccessToken_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAccessToken(System.String)">GetAccessToken(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccessToken GetAccessToken(string accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonAuthenticationTypes.AccessToken.html">AccessToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllAccessTokenOfUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllAccessTokenOfUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllAccessTokenOfUser_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllAccessTokenOfUser(System.String)">GetAllAccessTokenOfUser(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISet&lt;AccessToken&gt; GetAllAccessTokenOfUser(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.APIServer.CommonAuthenticationTypes.AccessToken.html">AccessToken</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllRoles_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllRoles*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllRoles" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllRoles">GetAllRoles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISet&lt;Role&gt; GetAllRoles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1">ISet</a>&lt;<a class="xref" href="GRYLibrary.Core.APIServer.CommonDBTypes.Role.html">Role</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllUsers_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllUsers*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetAllUsers" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetAllUsers">GetAllUsers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDictionary&lt;string, UserType&gt; GetAllUsers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, UserType&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetRoleById_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetRoleById*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetRoleById_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetRoleById(System.String)">GetRoleById(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Role GetRoleById(string roleId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonDBTypes.Role.html">Role</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetRoleByName_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetRoleByName*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetRoleByName_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetRoleByName(System.String)">GetRoleByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Role GetRoleByName(string roleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonDBTypes.Role.html">Role</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserByAccessToken_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserByAccessToken*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserByAccessToken_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserByAccessToken(System.String)">GetUserByAccessToken(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserType GetUserByAccessToken(string accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserById_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserById*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserById_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserById(System.String)">GetUserById(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserType GetUserById(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserByName_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserByName*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_GetUserByName_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.GetUserByName(System.String)">GetUserByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserType GetUserByName(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveAccessToken_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveAccessToken*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveAccessToken_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveAccessToken(System.String)">RemoveAccessToken(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveAccessToken(string accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveRoleFromUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveRoleFromUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveRoleFromUser_System_String_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveRoleFromUser(System.String,System.String)">RemoveRoleFromUser(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveRoleFromUser(string userId, string roleId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RemoveUser_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RemoveUser(System.String)">RemoveUser(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveUser(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RoleExists_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RoleExists*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_RoleExists_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.RoleExists(System.String)">RoleExists(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RoleExists(string roleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UpdateRole_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UpdateRole*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UpdateRole_GRYLibrary_Core_APIServer_CommonDBTypes_Role_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UpdateRole(GRYLibrary.Core.APIServer.CommonDBTypes.Role)">UpdateRole(Role)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateRole(Role role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GRYLibrary.Core.APIServer.CommonDBTypes.Role.html">Role</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UpdateUser_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UpdateUser*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UpdateUser__0_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UpdateUser(`0)">UpdateUser(UserType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateUser(UserType user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserType</span></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserHasRole_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserHasRole*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserHasRole_System_String_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserHasRole(System.String,System.String)">UserHasRole(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UserHasRole(string userId, string roleId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">roleId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserWithIdExists_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserWithIdExists*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserWithIdExists_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserWithIdExists(System.String)">UserWithIdExists(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UserWithIdExists(string userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserWithNameExists_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserWithNameExists*"></a>
+  <h4 id="GRYLibrary_Core_APIServer_Services_Trans_IAuthenticationServicePersistence_1_UserWithNameExists_System_String_" data-uid="GRYLibrary.Core.APIServer.Services.Trans.IAuthenticationServicePersistence`1.UserWithNameExists(System.String)">UserWithNameExists(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UserWithNameExists(string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_DeepClone__1___0_">Utilities.DeepClone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionary_System_Object_">EnumerableTools.ObjectIsDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsDictionaryEntry_System_Object_">EnumerableTools.ObjectIsDictionaryEntry(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsEnumerable_System_Object_">EnumerableTools.ObjectIsEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsKeyValuePair_System_Object_">EnumerableTools.ObjectIsKeyValuePair(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsList_System_Object_">EnumerableTools.ObjectIsList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsSet_System_Object_">EnumerableTools.ObjectIsSet(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectIsTuple_System_Object_">EnumerableTools.ObjectIsTuple(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary_System_Object_">EnumerableTools.ObjectToDictionary(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToDictionary__2_System_Object_">EnumerableTools.ObjectToDictionary&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable_System_Object_">EnumerableTools.ObjectToEnumerable(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToEnumerable__1_System_Object_">EnumerableTools.ObjectToEnumerable&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToKeyValuePair__2_System_Object_">EnumerableTools.ObjectToKeyValuePair&lt;TKey, TValue&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList_System_Object_">EnumerableTools.ObjectToList(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToList__1_System_Object_">EnumerableTools.ObjectToList&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToSet__1_System_Object_">EnumerableTools.ObjectToSet&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.EnumerableTools.html#GRYLibrary_Core_Misc_EnumerableTools_ObjectToTuple__2_System_Object_">EnumerableTools.ObjectToTuple&lt;T1, T2&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_NullSafeEquals_System_Object_System_Object_">Utilities.NullSafeEquals(object, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="GRYLibrary.Core.Misc.Utilities.html#GRYLibrary_Core_Misc_Utilities_ToDynamic_System_Object_">Utilities.ToDynamic(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
